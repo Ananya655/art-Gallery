@@ -21,7 +21,7 @@
         }
         .info{
             margin: 20px;
-            background-color: rgb(235, 235, 235);
+            background-color: rgba(230, 221, 222, 0.85);
             width: 310px;
            border-radius: 10px;
             padding: 10px
@@ -52,13 +52,25 @@
         input[type="button"]{
             height: 30px;
             width: 300px;
-            background-color: black;
+            background-color: #2d1619;
             color: white;
             border-radius: 5px;
         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            color: #2d1619;
+        }
+        
         header {
-            background-color: black;
-            padding: 20px;
+            background-color: #2d1619;
+            
             position: sticky;
             top: 0;
             z-index: 100;
@@ -77,7 +89,7 @@
             font-weight: 800;
             position: relative;
             letter-spacing: 4px;
-            background: linear-gradient(45deg, #38bdf8, #818cf8, #c084fc);
+            background: linear-gradient(45deg, #8d717a, #623740, #482626);
             background-size: 200% auto;
             color: transparent;
             -webkit-background-clip: text;
@@ -99,17 +111,7 @@
             filter: drop-shadow(0 0 3px rgba(69, 16, 38, 0.5));
         }
         
-        @keyframes shine {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+        
         
         .logo-text::after {
             content: '';
@@ -123,7 +125,7 @@
         
         .slogan {
             font-size: 16px;
-            color: #64748b;
+            color: #d2d0d1;
             text-align: center;
             margin-bottom: 15px;
             font-style:normal;
@@ -145,7 +147,7 @@
         }
         
         nav ul li a {
-            color: #94a3b8;
+            color: #e2e8f0;
             text-decoration: none;
             font-size: 18px;
             transition: all 0.3s ease;
@@ -171,255 +173,8 @@
             width: 100%;
         }
         
-        .slider-container {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-        }
-        
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .slide.active {
-            opacity: 1;
-        }
-        
-        .slide-caption {
-            position: absolute;
-            bottom: 50px;
-            left: 50px;
-            background-color: rgba(103, 100, 101, 0.85);
-            padding: 20px;
-            max-width: 450px;
-            border-left: 4px solid rgba(69, 16, 38, 0.5);
-            border-radius: 0 5px 5px 0;
-            backdrop-filter: blur(5px);
-        }
-        
-        .slide-caption h2 {
-            color: #e2e8f0;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-        
-        .slide-caption p {
-            color: #94a3b8;
-            font-size: 16px;
-        }
-        
-        .slider-controls {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-        }
-        
-        .slider-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .slider-dot.active {
-            background-color: #38bdf8;
-        }
-        
-        .content {
-            width: 80%;
-            margin: 40px auto;
-            background-color: rgba(255, 255, 255, 0.5);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        h1 {
-            color: #94a3b8;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 32px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        h1::after {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 3px;
-            background-color: #38bdf8;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-        
-        .highlights {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 40px;
-        }
-        
-        .highlight-box {
-            flex-basis: 30%;
-            background-color: #2d1619;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .highlight-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        .highlight-box h3 {
-            color: #94a3b8;
-            margin-bottom: 15px;
-            font-size: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .highlight-box h3::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 2px;
-            background-color: #38bdf8;
-            bottom: 0;
-            left: 0;
-        }
-        
-        .highlight-icon {
-            font-size: 30px;
-            color: #38bdf8;
-            margin-bottom: 15px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #746169;
-            color: #0f172a;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
-        
-        .cta-button:hover {
-            background-color: #c9bebe;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(15, 118, 168, 0.3);
-        }
-        
-        .newsletter {
-            background-color: #0f172a;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .newsletter h3 {
-            color: #94a3b8;
-            margin-bottom: 15px;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .newsletter-form input {
-            padding: 12px;
-            width: 300px;
-            border: none;
-            border-radius: 5px 0 0 5px;
-            background-color: #1e293b;
-            color: #e2e8f0;
-        }
-        
-        .newsletter-form button {
-            padding: 12px 20px;
-            background-color: #38bdf8;
-            color: #0f172a;
-            border: none;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        
-        .newsletter-form button:hover {
-            background-color: #0ea5e9;
-        }
-        
-        .upcoming-events {
-            margin-top: 40px;
-        }
-        
-        .event-card {
-            background-color: #0f172a;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .event-card:hover {
-            transform: translateX(5px);
-        }
-        
-        .event-date {
-            background-color: #38bdf8;
-            color: #0f172a;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-right: 20px;
-            width: 80px;
-            text-align: center;
-        }
-        
-        .event-info h4 {
-            color: #404245;
-            margin-bottom: 5px;
-        }
-        
-        .event-info p {
-            color: #94a3b8;
-            margin-bottom: 0;
-            font-size: 14px;
-        }
-        
         footer {
-            background-color: #1e293b;
+            background-color: #2d1619;
             padding: 40px 20px;
             margin-top: 40px;
         }
@@ -438,7 +193,7 @@
         }
         
         .footer-section h3 {
-            color: #94a3b8;
+            color: #d2d0d1;
             margin-bottom: 15px;
             font-size: 18px;
             position: relative;
@@ -450,7 +205,7 @@
             position: absolute;
             width: 40px;
             height: 2px;
-            background-color: #38bdf8;
+            background-color: #746169;
             bottom: 0;
             left: 0;
         }
@@ -464,7 +219,7 @@
         }
         
         .footer-section ul li a {
-            color: #64748b;
+            color: #d2d0d1;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -474,7 +229,7 @@
         }
         
         .footer-section p {
-            color: #64748b;
+            color: #d2d0d1;
             line-height: 1.6;
             font-size: 14px;
         }
@@ -488,8 +243,8 @@
             display: inline-block;
             width: 36px;
             height: 36px;
-            background-color: #0f172a;
-            color: #94a3b8;
+            background-color: #2d1619;
+            color: #d2d0d1;
             border-radius: 50%;
             text-align: center;
             line-height: 36px;
@@ -498,7 +253,7 @@
         }
         
         .social-links a:hover {
-            background-color: #38bdf8;
+            background-color: #746169;
             color: #0f172a;
             transform: translateY(-3px);
         }
@@ -508,7 +263,7 @@
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid #334155;
-            color: #64748b;
+            color: #d2d0d1;
             font-size: 14px;
         }
         
@@ -518,7 +273,7 @@
             right: 20px;
             width: 40px;
             height: 40px;
-            background-color: #38bdf8;
+            background-color: #746169;
             color: #0f172a;
             border-radius: 50%;
             display: flex;
@@ -594,9 +349,9 @@
                 <svg  xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#38bdf8" />
-                            <stop offset="50%" stop-color="#818cf8" />
-                            <stop offset="100%" stop-color="#c084fc" />
+                            <stop offset="0%" stop-color="#746169" />
+                            <stop offset="50%" stop-color="#746169" />
+                            <stop offset="100%" stop-color="#746169" />
                         </linearGradient>
                     </defs>
                     <path d="M50,10 C70,10 85,25 85,50 C85,75 70,90 50,90 C30,90 15,75 15,50 C15,25 30,10 50,10 Z" fill="none" stroke="url(#logo-gradient)" stroke-width="5" />
@@ -635,20 +390,20 @@
             <td>Email Address<span class="required">*</span></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="textbox"></td>
+            <td colspan="2"><input type="textbox" id="email1"></td>
         </tr>
         <tr>
             <td>Password<span class="required">*</span></td>
         </tr>
         <tr>
-        <td colspan="2"><input type="password"></td>
+        <td colspan="2"><input type="password" id="pw"></td>
         </tr>
         <tr>
             <td style="color: red;">* Required fields</td>
             <td>Forgot Your Password?</td>
         </tr>
         <tr>
-            <td colspan="2"><input type="button" value="Login"></td>
+            <td colspan="2"><input type="button" value="Login" onclick="login()"></td>
         </tr>
        </table></td>
     </tr>
@@ -701,22 +456,22 @@ registration process</pre></td>
                             <tr>
                             
                                 <td>First Name<span class="required">*</span></td></tr>
-                                <tr><td><input type="textbox"></td></tr>
+                                <tr><td><input type="textbox" id="username"></td></tr>
                                 <tr></tr><td>last Name<span class="required">*</span></td></tr>
-                                <tr><td><input type="password"></td></tr>
+                                <tr><td><input type="textbox" id="lastname"></td></tr>
                                 <tr><td>Date of Birth</td></tr>
                                 <tr><td><input type="date"></td></tr>
                                 <tr><td>Mobile Number<span class="required">*</span></td></tr>
-                                <tr><td><input type="textbox"></td></tr>
+                                <tr><td><input type="textbox" id="phone"></td></tr>
                                 <tr><td>Email Address<span class="required">*</span></td></tr>
-                                <tr><td><input type="textbox"></td></tr>
+                                <tr><td><input type="textbox" id="email"></td></tr>
                                 <tr><td>Password<span class="required">*</span></td></tr>
-                                <tr><td><input type="password"></td></tr>
+                                <tr><td><input type="password" id="password"></td></tr>
                                 <tr><td>Confirm Password<span class="required">*</span></td></tr>
-                                <tr><td><input type="password"></td></tr>
+                                <tr><td><input type="password" id="confirmpassword"></td></tr>
                                 <tr><td><a href="terms">Terms and Condittions</a></td></tr>
-                                <tr><td><input type="checkbox"><label>I have read and accept the terms and conditions</label></td></tr>
-                                <tr><td><input type="button" value="Register"></td></tr>
+                                <tr><td><input type="checkbox" id="check"><label>I have read and accept the terms and conditions</label></td></tr>
+                                <tr><td><input type="button" value="Register" onclick="register()"></td></tr>
 
                             </tr>
                         </table>
@@ -774,6 +529,57 @@ registration process</pre></td>
     </footer>
     
     <a href="#" class="back-to-top" id="back-to-top">↑</a>
+    <script>
+        function login(){
+            let email = document.getElementById("email1").value;
+            let pw = document.getElementById("pw").value;
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return;
+            }
+            if(pw=""){
+                alert("Enter the password");
+                return;
+            }
+            alert("You have successflly logged in!")
+
+        }
+        function register() {
+            let username = document.getElementById("username").value;
+            let lastname = document.getElementById("lastname").value;
+            let dob = document.getElementById("dob").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let confirmpassword = document.getElementById("confirmpassword").value;
+            let check = document.getElementById("check").checked;
+            if (username === "" || lastname === "" || dob === "" || phone === "" || email === "" || password === "" || confirmpassword === "") {
+                alert("All fields must be filled");
+                return;
+            }
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return;
+            }
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Phone number must be exactly 10 digits");
+                return;
+            }
+            if (password !== confirmpassword) {
+                alert("Passwords do not match");
+                return;
+            }
+            if (!check) {
+                alert("You must agree to the Terms and Conditions");
+                return;
+            }
+            alert("Registration Successful!");
+        }
+        
+        
+    </script>
     </body>
     </html>
     
