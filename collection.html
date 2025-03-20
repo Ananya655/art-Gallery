@@ -14,13 +14,13 @@
         }
         
         body {
-            background-color: black;
-            color: #e2e8f0;
+            background-color: white;
+            color: #1e181a;
         }
         
         header {
-            background-color: black;
-            padding: 20px;
+            background-color: #2d1619;
+            
             position: sticky;
             top: 0;
             z-index: 100;
@@ -39,7 +39,7 @@
             font-weight: 800;
             position: relative;
             letter-spacing: 4px;
-            background: linear-gradient(45deg, #38bdf8, #818cf8, #c084fc);
+            background: linear-gradient(45deg, #8d717a, #623740, #482626);
             background-size: 200% auto;
             color: transparent;
             -webkit-background-clip: text;
@@ -61,17 +61,7 @@
             filter: drop-shadow(0 0 3px rgba(69, 16, 38, 0.5));
         }
         
-        @keyframes shine {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+        
         
         .logo-text::after {
             content: '';
@@ -85,7 +75,7 @@
         
         .slogan {
             font-size: 16px;
-            color: #64748b;
+            color: #d2d0d1;
             text-align: center;
             margin-bottom: 15px;
             font-style:normal;
@@ -107,7 +97,7 @@
         }
         
         nav ul li a {
-            color: #94a3b8;
+            color: #e2e8f0;
             text-decoration: none;
             font-size: 18px;
             transition: all 0.3s ease;
@@ -131,19 +121,6 @@
         
         nav ul li a:hover::after {
             width: 100%;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #121212;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
         }
 
         h1 {
@@ -203,7 +180,7 @@
             padding: 15px;
         }
         footer {
-            background-color: #1e293b;
+            background-color: #2d1619;
             padding: 40px 20px;
             margin-top: 40px;
         }
@@ -222,7 +199,7 @@
         }
         
         .footer-section h3 {
-            color: #94a3b8;
+            color: #d2d0d1;
             margin-bottom: 15px;
             font-size: 18px;
             position: relative;
@@ -234,7 +211,7 @@
             position: absolute;
             width: 40px;
             height: 2px;
-            background-color: #38bdf8;
+            background-color: #746169;
             bottom: 0;
             left: 0;
         }
@@ -248,7 +225,7 @@
         }
         
         .footer-section ul li a {
-            color: #64748b;
+            color: #d2d0d1;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -258,7 +235,7 @@
         }
         
         .footer-section p {
-            color: #64748b;
+            color: #d2d0d1;
             line-height: 1.6;
             font-size: 14px;
         }
@@ -272,8 +249,8 @@
             display: inline-block;
             width: 36px;
             height: 36px;
-            background-color: #0f172a;
-            color: #94a3b8;
+            background-color: #2d1619;
+            color: #d2d0d1;
             border-radius: 50%;
             text-align: center;
             line-height: 36px;
@@ -282,7 +259,7 @@
         }
         
         .social-links a:hover {
-            background-color: #38bdf8;
+            background-color: #746169;
             color: #0f172a;
             transform: translateY(-3px);
         }
@@ -292,7 +269,7 @@
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid #334155;
-            color: #64748b;
+            color: #d2d0d1;
             font-size: 14px;
         }
         
@@ -302,7 +279,7 @@
             right: 20px;
             width: 40px;
             height: 40px;
-            background-color: #38bdf8;
+            background-color: #746169;
             color: #0f172a;
             border-radius: 50%;
             display: flex;
@@ -378,9 +355,9 @@
                 <svg  xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#38bdf8" />
-                            <stop offset="50%" stop-color="#818cf8" />
-                            <stop offset="100%" stop-color="#c084fc" />
+                            <stop offset="0%" stop-color="#746169" />
+                            <stop offset="50%" stop-color="#746169" />
+                            <stop offset="100%" stop-color="#746169" />
                         </linearGradient>
                     </defs>
                     <path d="M50,10 C70,10 85,25 85,50 C85,75 70,90 50,90 C30,90 15,75 15,50 C15,25 30,10 50,10 Z" fill="none" stroke="url(#logo-gradient)" stroke-width="5" />
@@ -402,38 +379,38 @@
             </ul>
         </nav>
     </header>
-    <h1>World Paintings</h1>
+    <h1 align="center">World Paintings</h1>
     <div class="a1">
         <table>
             <tr>
-                <td><img src="rajaraviverma.webp" alt="Abanindranath Tagore"></td>
-                <td><img src="mfhussain.jpg" alt="MF Hussain"></td>
-                <td><img src="madhubani1.jpg" alt="Raja Ravi Verma"></td>
+                <td><a href="https://en.wikipedia.org/wiki/Shakuntala_(Raja_Ravi_Varma)"><img src="rajaraviverma.webp" alt="shakuntala"></a></td>
+                <td><a href="https://en.wikipedia.org/wiki/M._F._Husain"><img src="mfhussain.jpg" alt="Modern Indian art"></a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Madhubani_art"><img src="madhubani1.jpg" alt="Madhubani"></a></td>
             </tr>
             <tr>
-                <td>Abanindranath Tagore</td>
-                <td>MF Hussain</td>
-                <td>Raja Ravi Verma</td>
+                <td>Shankuntala</td>
+                <td>Modern Indian art</td>
+                <td>Madhubani</td>
             </tr>
             <tr>
-                <td><img src="pattachitra.jpg" alt="Leonardo Da Vinci"></td>
-                <td><img src="monalisa.jpg" alt="Caravaggio"></td>
-                <td><img src="modernart.jpg" alt="Michelangelo"></td>
+                <td><a href="https://en.wikipedia.org/wiki/Pattachitra"><img src="pattachitra.jpg" alt="Pattachitra"></a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Mona_Lisa"><img src="monalisa.jpg" alt="Monalisa"></a></td>
+                <td><a href="https://wallmantra.com/collections/abstract-modern-art/?srsltid=AfmBOoowtHz3mLCLwOsC0mgIZiJIwDzxT-of2ijNJ2AIRcKkfHYILBgW"><img src="modernart.jpg" alt="Modern art"></a></td>
             </tr>
             <tr>
-                <td>Leonardo Da Vinci</td>
-                <td>Caravaggio</td>
-                <td>Michelangelo</td>
+                <td>Pattachitra Painting</td>
+                <td>Monalisa</td>
+                <td>Modern art</td>
             </tr>
             <tr>
-                <td><img src="starrynight.jpg" alt="Eugene Delacroix"></td>
-                <td><img src="warli1.jpg" alt="Francisco Goya"></td>
-                <td><img src="Girl_with_a_Pearl_Earring.jpg" alt="Pablo Picasso"></td>
+                <td><a href="https://en.wikipedia.org/wiki/The_Starry_Night"><img src="starrynight.jpg" alt="Starry Night"></a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Warli_painting"><img src="warli1.jpg" alt="Warli paintings"></a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"><img src="Girl_with_a_Pearl_Earring.jpg" alt="Girl with a pearl earring"></a></td>
             </tr>
             <tr>
-                <td>Eugene Delacroix</td>
-                <td>Francisco Goya</td>
-                <td>Pablo Picasso</td>
+                <td>Starry Night</td>
+                <td>Warli paintings</td>
+                <td>Girl with a pearl earring</td>
             </tr>
             
         </table>
